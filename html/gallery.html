@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+        body{
+            background-image: url(/Images/background.jpg);
+            background-size: cover;
+        }
+
+        .title h1{
+            text-align:center;
+            font-family: 'Lobster', cursive;
+            color: var(--dark);
+            font-size: 50px;
+        }
+
+        .title h2{
+            text-align: center;
+            margin: 20px;
+            font-family: 'Mulish', sans-serif;
+            color:#f3b97b;
+        }
+
+        .main{
+            padding: 70px 1px;
+            margin: 150px 80px;
+            background-color: var(--light);
+        }
+
+        #pic-1, #pic-2, #pic-3, #pic-4, #pic-5, #pic-6, #pic-7, #pic-8, #pic-9{
+            display: inline-block;
+            margin: 30px 12px;
+        }
+
+        #gallery{
+            margin-top: 70px;
+            margin-left:70px;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Mulish:wght@200&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/lightbox.css">
+</head>
+
+<body>
+    
+    <div class="background-img">
+    </div>
+
+    <nav>
+		<div class="nav-bar">
+			<h1 style="color: #f8efe8;">Wanderlust Travels</h1>
+
+			<div class="menu">
+				<ul>
+					<li><a href="home.html" class="main-link">Home</a></li>
+						<li class="dropdown">
+							<a href="" class="main-link">About Us</a>
+								<ul class="dropdown-content">
+									<li><a href="/html/services.html">Our Services</a></li>
+									<li><a href="/html/team.html">Our Team</a></li>
+								</ul>
+						</li>
+					<li><a href="/html/gallery.html" class="main-link  is-active">Gallery</a></li>                    
+					<li><a href="/html/packages.html" class="main-link">Packages</a></li>
+					<li><a href="/html/contactus.html" class="main-link">Contact Us</a></li>
+				</ul>   
+			</div>
+		</div>
+	</nav>
+
+    <div class="main">
+        <div class="title">
+            <h1>Gallery</h1>
+            <h2>Take a look at the photos taken by our wanderlusters!</h2>
+        </div>
+        
+        <div id="gallery">
+            <div id="pic-1">
+                <a class="example-image-link" href="/Images/pic 1.jpg" data-lightbox="example-set" data-title="Lake Sandoval, Tambopata National Reserve, Peru">
+                    <img src="/images/pic 1.jpg" alt="" height="197px" width="350px">
+                </a>
+            </div>
+            
+            <div id="pic-2">
+                <a class="example-image-link" href="/Images/pic 2.jpg" data-lightbox="example-set" data-title="Neuschwandstein, Germany">
+                    <img src="/images/pic 2.jpg" alt="" height="197px" width="350px">
+                </a>
+            </div>
+
+            <div id="pic-3">
+                <a class="example-image-link" href="/Images/pic 3.jpg" data-lightbox="example-set" data-title="Iceland">
+                    <img src="/images/pic 3.jpg" alt="" height="197px" width="350px">
+                </a>
+            </div>
+
+            <div id="pic-4">
+                <a class="example-image-link" href="/Images/pic 4.jpg" data-lightbox="example-set" data-title="Karnak Temple, Luxor, Egypt">
+                    <img src="/images/pic 4.jpg" alt="" height="197px" width="350px">
+                </a>
+            </div>
+
+            <div id="pic-5">
+                <a class="example-image-link" href="/Images/pic 5.jpg" data-lightbox="example-set" data-title="Tōdaiji, Shimamoto, Osaka, Japan">
+                    <img src="/images/pic 5.jpg" alt="" height="197px" width="350px">
+                </a>
+            </div>
+
+            <div id="pic-6">
+                <a class="example-image-link" href="/Images/pic 6.jpg" data-lightbox="example-set" data-title="Turkey">
+                    <img src="/images/pic 6.jpg" alt="" height="197px" width="350px">
+                </a>
+            </div>
+
+            <div id="pic-7">
+                <a class="example-image-link" href="/Images/pic 7.jpg" data-lightbox="example-set" data-title="Metropol Parasol, Plaza de la Encarnación, Seville, Spain">
+                    <img src="/images/pic 7.jpg" alt="" height="197px" width="350px">
+                </a>
+            </div>
+
+            <div id="pic-8">
+                <a class="example-image-link" href="/Images/pic 8.jpg" data-lightbox="example-set" data-title="The Great Wall of China">
+                    <img src="/images/pic 8.jpg" alt="" height="197px" width="350px">
+                </a>
+            </div>
+
+            <div id="pic-9">
+                <a class="example-image-link" href="/Images/pic 9.jpg" data-lightbox="example-set" data-title="Yangjae Citizen Forest, Seoul">
+                    <img src="/images/pic 9.jpg" alt="" height="197px" width="350px">
+                </a>
+            </div>
+
+            <script src="/js/lightbox-plus-jquery.js"></script>
+            <script src="/js/lightbox.js"></script>
+        </div>
+    
+    </div>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/html/home.html">Home</a></li>
+                <li class="list-inline-item"><a href="/html/services.html">Our Services</a></li>
+                <li class="list-inline-item"><a href="/html/team.html">Our Team</a></li>
+                <li class="list-inline-item"><a href="/html/gallery.html">Gallery</a></li>
+                <li class="list-inline-item"><a href="/html/packages.html">Packages</a></li>
+                <li class="list-inline-item"><a href="/html/contactus.html">Contact Us</a></li>
+            </ul>
+            <p class="copyright">Wanderlust Travels © 2022</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+</html>

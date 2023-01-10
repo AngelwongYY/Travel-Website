@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-image: url(/Images/login-bg.jpg);
+        }
+
+        input,label{
+            display: block;
+        }
+
+        input[type=text], input[type=password] {
+            width: 400px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid lightgray;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color:var(--dark);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .container-1{
+            background-color: var(--light);
+            margin: 200px 300px 100px 100px;
+            padding-top: 100px;
+        }
+
+        .container-2 {
+            margin: 100px 100px 100px 100px;
+        }
+
+        span.psw a{
+            margin-left: 250px;
+        }
+
+        .signup-btn button{
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom:100px ;
+            border-radius: 99px;
+            font-size:18px;
+        }
+
+        label b{
+            color: var(--dark);
+            font-family: 'Lobster', cursive;
+            font-size: 25px;
+        }
+
+        .fName input, .lName input,.em input, .psw input, .confirm-psw input{
+            border-radius: 99px;
+            padding: 10px;
+        }
+
+        .home-link a:active, .home-link a:hover, .home-link a{
+            text-decoration: none;
+            color: var(--light);
+        }
+
+        .psw a{
+            text-decoration: underline;
+            color: var(--dark);
+        }
+
+        .su-text h2{
+            margin-left: 100px;
+        }
+
+
+
+
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Mulish:wght@200&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar">
+            <h1 style="color: #f8efe8;" class="home-link"><a href="home.html">Wanderlust Travels</a></h1>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="/html/home.html" class="main-link">Home</a></li>
+                    <li><a href="/html/login.html" class="main-link">Login</a></li>
+                    <li><a href="" class="is-active main-link">Sign Up</a></li>
+                </ul>   
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-1">
+        <div class="su-text">
+            <h2 style=" color:var(--dark);font-family: 'Mulish', sans-serif;">Sign up to start planning your journey with us.</h2>
+        </div>
+        <form onsubmit="show_alert()">
+            <div class="container-2">
+                <section>
+                    <div class="fName" style="float: left; margin-right: 20px;">
+                        <label for="name"><b>First Name</b></label>
+                        <input type="text" placeholder="Enter First Name" name="fName" id="name" pattern="[a-z]" required>
+                    </div>
+    
+                    <div class="lName" style="float: left;">
+                        <label for="lName"><b>Last Name</b></label>
+                        <input type="text" placeholder="Enter Last Name" id="lName" name="lName" pattern="[a-z]" required>
+                    </div>
+                </section>
+                
+                <section>
+                    <div class="em">
+                        <label for="em"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" id="em" name="em" required>
+                    </div>                
+                  
+                    <div class="psw">
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+                    </div>
+    
+                    <div class="confirm-psw">
+                        <label for="confirm-psw"><b>Confirm Password</b></label>
+                        <input type="password" placeholder="Confirm Password" id="confirm-psw" name="confirm-psw" required>
+                    </div>
+    
+                    <div class="signup-btn">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+
+    <div style="position: absolute; top: 550px;right: 80px;">
+        <img src="/Images/car.png" alt="car" width="750">
+    </div>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/html/home.html">Home</a></li>
+                <li class="list-inline-item"><a href="/html/services.html">Our Services</a></li>
+                <li class="list-inline-item"><a href="/html/team.html">Our Team</a></li>
+                <li class="list-inline-item"><a href="/html/gallery.html">Gallery</a></li>
+                <li class="list-inline-item"><a href="/html/packages.html">Packages</a></li>
+                <li class="list-inline-item"><a href="/html/contactus.html">Contact Us</a></li>
+            </ul>
+            <p class="copyright">Wanderlust Travels © 2022</p>
+        </footer>
+    </div>
+
+    <script>
+        function show_alert(){
+            var n = (document.getElementById("name").value)
+		    alert("Registration successful, Welcome " + n + "!")
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

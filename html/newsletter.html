@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Mulish:wght@200&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+
+        body{
+            background-color: #b5c2d2;
+
+        }
+
+        .title h1{
+            color: var(--light);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:50px ;
+            letter-spacing: 3px;
+            position: absolute;
+            top: 200px;
+            left:400px;
+        }
+
+        .bg{
+            margin: 100px 0 0 0;
+            background-image: url(/Images/newsletter_bg.jpg);
+            height: 60%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .detail-container{
+            background-color: var(--light);
+            height: 400px;
+            margin: -200px 300px 200px 300px;
+            border-radius: 10px;
+        }
+
+        .details{
+            margin:-500px 25px 200px 25px;
+            text-align: center;
+            /* position: absolute;
+            top: 500px;
+            left: 375px; */
+        }
+
+        .details h2{
+            font-family: 'Lobster', cursive;
+            font-size: 35px;
+        }
+
+        .details h3{
+            font-family: 'Mulish', sans-serif;
+            font-size: 25px;
+            
+        }
+
+        .email{
+            margin-top: 75px;
+        }
+
+        [type="email"]{
+            width: 300px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            border-style: none;
+        }
+
+        [type="submit"]{
+            margin-left: 10px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: var(--accent);
+            color: #055890;
+            border-style: none;
+        }
+        
+        [type="submit"]:hover{
+            background-color:#f0ad64;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+		<div class="nav-bar">
+			<h1 style="color: #f8efe8;">Wanderlust Travels</h1>
+
+			<div class="menu">
+				<ul>
+					<li><a href="home.html" class="main-link">Home</a></li>
+						<li class="dropdown">
+							<a href="" class="main-link">About Us</a>
+								<ul class="dropdown-content">
+									<li><a href="/html/services.html">Our Services</a></li>
+									<li><a href="/html/team.html">Our Team</a></li>
+								</ul>
+						</li>
+					<li><a href="/html/gallery.html" class="main-link">Gallery</a></li>                    
+					<li><a href="/html/packages.html" class="main-link">Packages</a></li>
+					<li><a href="/html/contactus.html" class="main-link">Contact Us</a></li>
+				</ul>   
+			</div>
+		</div>
+	</nav>
+
+    <div class="bg"></div>
+
+    <div class="title">
+        <h1>JOIN OUR NEWSLETTER</h1>
+    </div>
+    
+    <div class="detail-container"></div>
+    <div class="details">
+        <h2>Be the first one to know about our deals</h2>
+        <h3>Receive the latest news and exclusive offers every week</h3>
+        <div class="email">
+            <form action="javascript:void(0);" onsubmit="alert('Thank you for joining our newsletter, \nStay tuned for more exciting news!')">
+                <input type="email" placeholder="EMAIL ADDRESS" required>
+                <input type="submit" value="SUBMIT"/>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/html/home.html">Home</a></li>
+                <li class="list-inline-item"><a href="/html/services.html">Our Services</a></li>
+                <li class="list-inline-item"><a href="/html/team.html">Our Team</a></li>
+                <li class="list-inline-item"><a href="/html/gallery.html">Gallery</a></li>
+                <li class="list-inline-item"><a href="/html/packages.html">Packages</a></li>
+                <li class="list-inline-item"><a href="/html/contactus.html">Contact Us</a></li>
+            </ul>
+            <p class="copyright">Wanderlust Travels © 2022</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
